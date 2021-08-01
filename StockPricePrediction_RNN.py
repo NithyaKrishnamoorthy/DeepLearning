@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 
 # Preprocessing the dataset
 #import training set
-dataset_train = pd.read_csv('Google_Stock_Price_Train.csv')
+dataset_train = pd.read_csv('data\Google_Stock_Price_Train.csv')
 
 training_set = dataset_train.iloc[:, 1:2].values
 
@@ -73,7 +73,7 @@ regressor.fit(X_train, y_train, epochs=100, batch_size=32)
 # Making predictions
 
 #get real data 
-dataset_test = pd.read_csv('Google_Stock_Price_Train.csv')
+dataset_test = pd.read_csv('data\Google_Stock_Price_Train.csv')
 
 real_stock_price = dataset_test.iloc[:, 1:2].values
 
